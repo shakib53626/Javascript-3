@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Css Link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Preloader</title>
+  </head>
+  <body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-title">
+                <h2>Webpage Preloader</h2>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-1">
+        <div class="container">
+            <div class="preloader">
+                <div class="preloader-area mb-4">
+                    <div class="load-content"></div>
+                    <span>Loding...</span>
+                </div>
+                <div class="preloader-area">
+                    <div class="load-content3"></div>
+                    <div class="load-content1"></div>
+                    <div class="load-content2"></div>
+                    <span>Loding...</span>
+                </div>
+                <div class="preloader-area">
+                    <div class="load-content4"></div>
+                    <span>Loding...</span>
+                </div>
+                <div class="preloader-area">
+                    <div class="load-content5"></div>
+                    <span>Loding...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header-title">
+                <h2>Calculator</h2>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="section-1">
+        <div class="container">
+            <div class="calculator pt-3">
+                <h5 class="pt-3 ps-5 mb-3"><i>Calculator</i></h5>
+                <div class="buttons">
+                    <form action="" name="calculator">
+                        <input type="text" id="display" name="result" readonly placeholder="0">
+
+                        <div class="btn11">
+                            <input type="button" class="bg-info text-light" value="Sin" onclick="calculator.result.value=Math.sin(calculator.result.value)">
+                        <input type="button" class="bg-info text-light" value="cos" onclick="calculator.result.value=Math.tan(calculator.result.value)">
+                        <input type="button" class="bg-info text-light" value="tan" onclick="calculator.result.value=Math.cos(calculator.result.value)">
+                        <input type="button" class="bg-danger text-light" value="AC" onclick="calculator.result.value=''">
+
+
+                        <input type="button" class="bg-info text-light" value="%" onclick="calculator.result.value+='%'">
+                        <input type="button" class="bg-info text-light" value="√x" onclick="calcRoot()">
+                        <input type="button" class="bg-info text-light" value="x²" onclick="calcSquare()">
+                        <input type="button" class="bg-danger text-light" value="Del" onclick="calcDel()">
+
+                        <input type="button" class="text-light" value="7" onclick="calculator.result.value+='7'">
+                        <input type="button" class="text-light" value="8" onclick="calculator.result.value+='8'">
+                        <input type="button" class="text-light" value="9" onclick="calculator.result.value+='9'">
+                        <input type="button" class="bg-dark text-light" value="÷" onclick="calculator.result.value+='/'">
+
+                        <input type="button" class="text-light" value="4" onclick="calculator.result.value+='4'">
+                        <input type="button" class="text-light" value="5" onclick="calculator.result.value+='5'">
+                        <input type="button" class="text-light" value="6" onclick="calculator.result.value+='6'">
+                        <input type="button" class="bg-dark text-light" value="×" onclick="calculator.result.value+='*'">
+
+                        <input type="button" class="text-light" value="1" onclick="calculator.result.value+='1'">
+                        <input type="button" class="text-light" value="2" onclick="calculator.result.value+='2'">
+                        <input type="button" class="text-light" value="3" onclick="calculator.result.value+='3'">
+                        <input type="button" class="bg-dark text-light" value="+" onclick="calculator.result.value+='+'">
+
+                        <input type="button" class="text-light" value="0" onclick="calculator.result.value+='0'">
+                        <input type="button" class="bg-dark text-light" value="." onclick="calculator.result.value+='.'">
+                        <input type="button" class="bg-dark text-light" value="-" onclick="calculator.result.value+='-'">
+                        <input type="button" class="bg-dark text-light" value="=" onclick="calculator.result.value=eval(calculator.result.value)">
+                        </div>
+                        
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header-title">
+                <h2>Increment/Decrement</h2>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="section-2 mb-5">
+        <div class="container">
+            <div class="in-area text-center">
+                <h1 id="vnum">10</h1>
+                <p id="warning"></span>
+                </p>
+                <button id="inc">Increment</button>
+                <button id="dis">Decrement</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header-title">
+                <h2>Modal</h2>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="section-3 mb-5">
+        <div class="container">
+            <div class="btn-area">
+                <button id="btn1" onclick="hide()">Click Now</button>
+                <button id="btn1" onclick="hide()">Click Now</button>
+                <button id="btn1" onclick="hide()">Click Now</button>
+                <button id="btn1" onclick="hide()">Click Now</button>
+                <button id="btn1" onclick="hide()">Click Now</button>
+            </div>
+            <div class="hide-area" id="hide">
+                <div>
+                    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, dolor!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eum deserunt facilis voluptate natus delectus consectetur, iure dolore minus error libero consequuntur commodi beatae, aspernatur ipsam rem. Fugit atque doloribus harum qui, quasi consectetur et repudiandae mollitia ipsa laudantium perferendis tempore beatae tempora minus assumenda, corporis, id ad eum magni quaerat est voluptatem nesciunt esse. Doloribus iste impedit quidem repudiandae facilis eveniet. Amet explicabo rem vel voluptatibus magnam reprehenderit fugiat soluta totam harum eaque, repellendus doloribus deserunt molestiae earum cupiditate accusamus alias ipsa dolore modi mollitia hic officiis. Maiores laboriosam non ipsum. Quasi eius aperiam consectetur laboriosam sapiente quas iure?</p>
+                <button id="btn2" class="btn2">Click Now</button>
+                </div>
+                <button onclick="off()" id="close">×</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header-title">
+                <h2>Love Calculator</h2>
+            </div>
+        </div>
+    </header>
+
+
+
+    <script src="js/main.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
