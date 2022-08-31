@@ -14,10 +14,10 @@
     padding: 10px;
     border-radius: 60px;
 }
-.header-title h2{
+.header-title h6{
     color:#fff;
-    font-weight: bold;
-    font-size: 60px;
+    font-weight: 600;
+    font-size: 40px;
     text-align: center;
     line-height: 1;
 }
@@ -302,4 +302,96 @@
     padding:none;
     border-radius: none !important;
     padding: 0 3px;
+}
+
+
+
+.section-4{
+    background-color: #FFC0CB;
+    padding: 80px 0;
+}
+.love-area{
+    padding: 40px;
+    box-shadow: #BF7280 10px 10px 24px 0px inset, #BF7280 -10px -10px 6px 1px inset;
+    width: 700px;
+    margin: auto;
+    border-radius: 20px;
+}
+.love-area i{
+    font-size: 60px;
+    color: red;
+}
+.love-area h3{
+    text-transform:uppercase;
+    font-weight: bold;
+    color: #D8395E;
+}
+.love-area input{
+    border: 3px solid #D8395E;
+    margin:0 5px;
+    padding: 5px 12px;
+    text-transform:uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #D8395E;
+}
+.love-area form input:focus{
+    outline: none;
+}
+#calculat{
+        display: block;
+        margin: auto;
+        background-color: #D6365C;
+        border: none;
+        color: white;
+        padding: 12px 60px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-size: 18px;
+}
+.re-result{
+    width: 400px;
+    text-align: center;
+    background-color: #D6365C;
+    color: #fff;
+    border: none;
+    padding: 8px 50px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+#lovecoment{
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.section5{
+    background:linear-gradient(135deg, #8052ec, #d161ff);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.game-area{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 330px;
+    margin: auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.button-option{
+    background-color: #ffffff;
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 8px;
+    font-size: 60px;
+    font-weight: 600;
+    color: #D6365C;
+    text-transform: uppercase;
 }

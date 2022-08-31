@@ -145,3 +145,40 @@ function hide(){
 function off(){
     modal.style.display='none';
 }
+
+
+
+function love(){
+    var yourname = document.getElementById('yn').value;
+    var lovename = document.getElementById('ln').value;
+
+    if(yourname.length<=3){
+        alert("Enter at Minimum 4 Characters in Your Name");
+    }
+    if(lovename.length<=3){
+        alert("Enter at Minimum 4 Characters in Lover Name");
+    }
+    else{
+        var random = Math.floor(Math.random()*100);
+        document.getElementById('printr').innerHTML = yourname + ' AND ' +lovename+ " = " + random+ "% of love";
+    }
+    if(random<=30){
+        document.getElementById('lovecoment').innerHTML= 'Fake RelationShip';
+    }
+    else if(random>30 && random<=60){
+        document.getElementById('lovecoment').innerHTML='Good RelationShip';
+    }
+    else if(random>60 && random<=90){
+        document.getElementById('lovecoment').innerHTML='Better RelationShip';
+    }
+    else{
+        document.getElementById('lovecoment').innerHTML='Wow Wow RelationShip';
+    }
+}
+
+
+
+
+
+let btnRef = document.querySelectorAll("button-option");
+let winningPattern=[[0,1,2], [ 0,3,6], [2,5,8], [6,7,8], [3,4,5], [1,4,7], [0,4,8],[2,4,8]];
