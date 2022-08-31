@@ -376,7 +376,7 @@
     display: flex;
     align-items: center;
 }
-.game-area{
+.wrapper{
     display: grid;
     grid-template-columns: auto auto auto;
     width: 330px;
@@ -394,4 +394,63 @@
     font-weight: 600;
     color: #D6365C;
     text-transform: uppercase;
+}
+
+
+.section6{
+    background:linear-gradient(135deg, #1a0842, #09444e);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.clock-area{
+    width: 340px;
+    border:1px solid #2E94E3;
+    box-shadow: 0 0 30px #2E94E3;
+    padding: 15px 10px;
+    margin: auto;
+    border-radius: 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 0.01));
+    
+}
+.clock-area:hover{
+    background: #2E94E3;
+}
+.date{
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #fff;
+}
+.time{
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+
+}
+.copy{
+    margin-bottom: 0 !important;
+    padding: 16px;
+    font-size: 20px;
+}
+.footer span{
+    color: red;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width:767px) {
+    .preloader{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .love-area{
+        width: 500px;
+    }
+
 }

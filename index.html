@@ -16,7 +16,7 @@
 
     <title>Preloader</title>
   </head>
-  <body>
+  <body onload="initClock()">
 
     <header class="header">
         <div class="container">
@@ -207,7 +207,7 @@
 
     <section class="section5">
         <div class="container">
-            <div class="game-area">
+            <div class="wrapper">
                 <button class="button-option"></button>
                 <button class="button-option"></button>
                 <button class="button-option"></button>
@@ -220,6 +220,41 @@
             </div>
         </div>
     </section>
+
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header-title">
+                <h6>Digital Watch</h6>
+            </div>
+        </div>
+    </header>
+
+    <section class="section6">
+        <div class="container">
+            <div class="clock-area">
+                <div class="date">
+                    <span id="dayname">Day</span>,
+                    <span id="month"> Month</span>
+                    <span id="daynum"> 00</span>,
+                    <span id="year"> Year</span>
+                </div>
+                <div class="time">
+                    <span id="hour">00</span> :
+                    <span id="minutes">00</span> :
+                    <span id="seconds">00</span>
+                    <span id="priods"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-info">
+        <div class="container text-center">
+            <p class="copy">Copyright ©2022 All rights reserved | This template is made with <span><i class="fa-solid fa-heart"></i></span> by <span><i>SHAKIB</i></span></p>
+        </div>
+    </footer>
 
 
 
